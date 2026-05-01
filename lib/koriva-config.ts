@@ -59,7 +59,7 @@ export async function getKorivaConfig(): Promise<KorivaConfig | null> {
   } catch {
     return null;
   }
-});
+}
 
 /** Build inline CSS variable overrides from brand config for the <html> element. */
 export function buildCssVars(brand: BrandConfig | undefined): Record<string, string> {
