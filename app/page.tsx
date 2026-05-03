@@ -199,7 +199,7 @@ export default function CyclePage() {
         <div className="cy-hero-overlay" />
         <div className="cy-hero-content">
           <p className="cy-hero-eyebrow">{d.gym.location} · Indoor Cycling Studio</p>
-          <h1 className="cy-hero-title">
+          <h1 data-cg-el="hero_headline_1" className="cy-hero-title">
             RIDE.<br /><span>PUSH.</span><br />REPEAT.
           </h1>
           <p className="cy-hero-sub">{d.gym.name} delivers elite indoor cycling experiences designed to push every rider — regardless of level — to their absolute limit.</p>
