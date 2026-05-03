@@ -198,14 +198,14 @@ export default function CyclePage() {
         </video>
         <div className="cy-hero-overlay" />
         <div className="cy-hero-content">
-          <p className="cy-hero-eyebrow">{d.gym.location} · Indoor Cycling Studio</p>
+          <p data-cg-el="hero_eyebrow" className="cy-hero-eyebrow">{d.gym.location} · Indoor Cycling Studio</p>
           <h1 data-cg-el="hero_headline_1" className="cy-hero-title">
             RIDE.<br /><span>PUSH.</span><br />REPEAT.
           </h1>
-          <p className="cy-hero-sub">{d.gym.name} delivers elite indoor cycling experiences designed to push every rider — regardless of level — to their absolute limit.</p>
+          <p data-cg-el="hero_subtitle" className="cy-hero-sub">{d.gym.name} delivers elite indoor cycling experiences designed to push every rider — regardless of level — to their absolute limit.</p>
           <div className="cy-hero-actions">
-            <button className="cy-btn-primary">Claim Your Free Ride</button>
-            <button className="cy-btn-ghost">View Schedule</button>
+            <button data-cg-el="hero_cta_primary" className="cy-btn-primary">Claim Your Free Ride</button>
+            <button data-cg-el="hero_cta_secondary" className="cy-btn-ghost">View Schedule</button>
           </div>
         </div>
         <div className="cy-hero-scroll">
