@@ -2,9 +2,9 @@
 import type { Metadata } from 'next';
 import { Bebas_Neue, Barlow } from 'next/font/google';
 import './globals.css';
-import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
+import { getGarrison365Config, buildCssVars } from '@/lib/garrison365-config';
 
-import { KorivaLivePreview } from '@/components/KorivaLivePreview';
+import { Garrison365LivePreview } from '@/components/Garrison365LivePreview';
 const bebas = Bebas_Neue({ subsets: ['latin'], weight: ['400'], variable: '--font-bebas' });
 const barlow = Barlow({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], variable: '--font-barlow' });
 
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const cfg = await getKorivaConfig();
+  const cfg = await getGarrison365Config();
   const vars = buildCssVars(cfg?.brand);
   return (
     <html lang="en" style={vars as React.CSSProperties}>
-      <body className={`${bebas.variable} ${barlow.variable}`}>{children}<KorivaLivePreview /></body>
+      <body className={`${bebas.variable} ${barlow.variable}`}>{children}<Garrison365LivePreview /></body>
     </html>
   );
 }

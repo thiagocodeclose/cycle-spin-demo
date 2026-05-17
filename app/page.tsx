@@ -320,7 +320,7 @@ export default function CyclePage() {
           <div className="cy-footer-brand">CYCLE<span>.</span>HOUSE</div>
           <div className="cy-footer-info">{d.gym.address}<br />{d.gym.phone} · {d.gym.email}</div>
         </div>
-        <div className="cy-footer-copy">© {new Date().getFullYear()} {d.gym.name}. Powered by Koriva.</div>
+        <div className="cy-footer-copy">© {new Date().getFullYear()} {d.gym.name}. Powered by Garrison365.</div>
       </footer>
     </>
   );
